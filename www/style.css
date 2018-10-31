@@ -1,0 +1,197 @@
+body
+{
+	margin:0px;
+}
+*{
+box-sizing:border-box;
+}
+.col-1
+{ width:8.33%;}
+.col-2
+{ width:16.66%;}
+.col-3
+{ width:25%;}
+.col-4
+{ width:33.33%;}
+.col-5
+{ width:41.66%;}
+.col-6
+{ width:50%;}
+.col-7
+{ width:58.33%;}
+.col-8
+{ width:66.66%;}
+.col-9
+{ width:75%;}
+.col-10
+{ width:83.33%;}
+.col-11
+{ width:91.66%;}
+.col-12
+{ width:100%;}
+
+
+[class*="col-"]
+{
+	float:left;
+	}
+
+row::after
+{
+	clear:both;
+	display:block;
+	content:"";
+}
+.container
+{
+	padding:0px 70px 0px 70px;
+	clear:both;
+}
+.headerdiv
+{
+	background-color:#050333;
+	height:90px;
+	margin:20px;
+}
+#menu
+{
+	list-style-type: none;
+	
+}
+li
+{
+	float: left;
+    padding: 20px 30px 20px 30px;
+	cursor:pointer;
+	
+}
+
+li:hover
+{
+	background: #073e99;
+}
+.about1
+{
+	background-color:#050333;
+	margin:10px 20px 10px 20px;
+	height:500px;
+}
+.about2
+{
+	background-color:#050333;
+	margin:10px 20px 10px 20px;
+	height:650px;
+}
+div.box{
+  background: url(sec2.jpg) ;
+  border: 2px solid black;
+  height:500px;
+}
+
+div.transbox {
+  margin: 60px 100px 60px 100px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);  /* For IE8 and earlier */
+  height:400px;
+  font-size:30px;
+}
+
+div.transbox p {
+  margin: 2%;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+    background-color: #050333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius:5px;
+    text-align:center;
+	margin-left:380px;
+	margin-bottom:20px;
+	
+}
+.button1 {
+    background-color: #050333; /* Green */
+    border: none;
+    color: white;
+     padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius:5px;
+    float:right;
+	
+}
+.button2 {
+    background-color: #073e99; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+	border-radius:5px;
+    text-align:center;
+	float:right;
+	margin-right:450px; 
+	margin-top:20px;
+}
+.footerdiv
+{
+	background-color:#050333;
+	height:170px;
+	margin:10px;
+}
+
+
+
+#fonts
+{
+	margin:30px;
+	float:right;
+	color:white;
+	clear:both;
+}
+.fa:hover
+{
+	color:#073e99;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+
+
+
+

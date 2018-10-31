@@ -1,0 +1,250 @@
+body 
+{
+	background: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+html,body 
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+html 
+{
+  font-size: 100%;
+}
+/* Typography */
+h1,h2,h3, .btn 
+{
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h1 
+{
+  color: #000000;
+  font-weight: bold;
+  font-size: 100px;
+}
+h2 
+{
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+h3 
+{
+  color: #000000;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+h4 
+{
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+p 
+{
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+  
+}
+.parallax-section 
+{
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+/* hover min css 
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before {
+  background-color: #ffffff;
+}*/
+#team
+{
+  color: #656565;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#team
+{
+  text-align: center;
+}
+#team
+ {
+  background: rgb(240,240,240);
+}
+/* section title */
+.section-title {
+  padding-bottom: 70px;
+}
+/* Team section */
+#team h3 
+{
+  padding-bottom: 0px;
+}
+#team .team-des h4
+ {
+  color: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+#team img 
+{
+  width: 100%;
+}
+#team .team-thumb {
+  width: 100%;
+  position: relative;
+}
+#team .team-des 
+{
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  transition: height 450ms;
+}
+#team .team-thumb:hover .team-des 
+{
+  color: #000000;
+  height: 100%;
+  background-color: #c21500;
+  padding-top: 30%;
+  opacity: 0.9;
+}
+#team .team-thumb:hover h3,
+#team .team-thumb:hover h4,
+{
+  color: #eee;
+}
+#team .col-md-6 {
+  padding-top: 62px;
+}
+#team .col-md-6 h2 {
+  padding-bottom: 16px;
+}
+/* Mobile Responsive */
+@media (max-width: 980px) 
+{
+  #team .team-thumb
+  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 900px) 
+{
+  h1 {font-size: 70px;}
+
+}
+@media (max-width: 650px)
+  h1 
+  {
+    font-size: 60px;
+  }
+  h2 
+  {
+    font-size: 30px;
+  }
+  #team
+  {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0px; }
+/*body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }*/
+
+/****** Style Star Rating Widget *****/
+#star p
+{
+ /* margin:0px;
+  padding-top: 0px;
+  padding-bottom: 0px;*/
+  text-align: center;
+	
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 10px;
+  font-size: 1.50em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+.welcome-text{
+    
+}
+.welcome-text h2{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.welcome-text h2 span.bold{
+    font-weight: 800;
+}
+
+.welcome-text p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.welcome-text p span{
+    letter-spacing: 1px;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
